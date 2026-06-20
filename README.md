@@ -208,6 +208,16 @@ pedidos/
 └── pedidos.sln
 ```
 
+## Postman
+
+Importe a collection para testar todos os endpoints com variáveis encadeadas:
+
+1. Abra o Postman → **Import**
+2. Selecione o arquivo [`pedidos.postman_collection.json`](pedidos.postman_collection.json)
+3. Execute as pastas **na ordem**: 📦 Produtos → 🛒 Pedidos → ✏️ Itens → ⚠️ Validações
+
+Os scripts de teste capturam `productId`, `orderId` e `itemId` automaticamente a cada resposta — não é necessário copiar nenhum ID manualmente.
+
 ## Documentação
 - [PRD](PRD.md) — Requisitos do produto
 - [SDD](SDD.md) — Spec-Driven Development (specs de comportamento + decisões técnicas)
